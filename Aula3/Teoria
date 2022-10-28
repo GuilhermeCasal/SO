@@ -1,0 +1,35 @@
+Teoria:
+
+Quem atribui um PID é o Sistema Operativo
+
+Criar segmento memoria partilhada:
+	shmid = pshmet(key, size, 0600 | IPC_CREAT | IPC_EXCL);
+	
+	0600 -> o zero á esquerda significa que é octal(base 8), default é decimal
+	
+Usar um existente:
+	shmid = pshmet(key, 0, 0)
+	
+	
+Destruir recurso IPC:
+	pshmctl(shmid, IPC_RMID, NULL)
+	
+	
+ SEMAFOROS
+ 
+ 	-Incrementar e Decrementar
+ 	-Variavel inteira nao negativa
+ 	-Se estiver a 0 e quisermos decrementar mais o programa fica á espera de que o semaforo venha a 1 para realizar o decremento
+ 	
+ Para criar semaforo
+ 	smid = psemget(key, 1, 0600 | IPC_CREAT | IPC_EXCL);
+ 	
+ 	
+ 	PERMISSOES
+ 	
+ 	U     G     O
+      rwx    rwx   rwx
+      110    000   000
+      
+      0600 em binario em cima
+      	

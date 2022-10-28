@@ -1,0 +1,22 @@
+Aula 4      14/10
+
+Programaçao threads
+
+	Numa thread as variaveis sao partilhadas 
+	Coexistem dentro do processo e mais barato que um  processo
+	Precisa de espaço de endereçamento proprio
+	-temos sempre de sincronizar tudo para usar 
+	-biblioteca usada Posix threads 
+	
+	Para compilar:
+		g++ -pthread
+		makefile -> as flags das threads tem de estar todas ativas
+		man pthread_create (library)
+		man pthread_join 
+		
+		
+		
+		
+			
+	
+	

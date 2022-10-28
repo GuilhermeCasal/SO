@@ -1,0 +1,30 @@
+Para compilar o programa tem que ser dentro do diretorio com:
+	g++ ull.cpp main.cpp
+	./a.out
+	
+
+
+struct Register{
+	uint32_t nmec;
+	const char *name;
+}
+
+struct Node{
+	Register reg;
+	struct Node *next
+}
+
+Para saber por exemplo o nmec que está inserido num node
+p->reg.nmec     ou     (*p).reg.nmec
+
+
+
+Node *n = new Node();
+Node *n = (Node *)malloc(sizeof(Node));
+
+para dupilcar uma string para o registo:
+man strdup
+
+paea compilar uitilizar no diretorio do file o comando 
+make
+

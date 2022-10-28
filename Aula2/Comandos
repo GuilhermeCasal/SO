@@ -1,0 +1,9 @@
+make fork1
+./fork1
+
+o PRINCIPAL objetivo dos forks é criação de novos processos.
+
+wait faz com o que processo fique á espera do processo filho;
+
+
+Programa deve fazer um fork no filho contar de 1 a 10 e o pai ficar á espera que o filho o conte 

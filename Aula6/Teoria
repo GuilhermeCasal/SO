@@ -1,0 +1,17 @@
+Programação concorrente
+
+1 -> Identificação de entidades ativas(EA)
+	patient, merge, doctor => thread/process
+
+2 -> Identificação do modulo partilhados
+	pfifo => operações publicas com regioes criticas - exclusão mutua =>
+							   - sincronização condicional =>
+
+3 -> Se aplicavel, identificar pontos de comunicação direta entre EA
+	doctor -> patient (DONE) => semaforos / mutex
+	
+	
+PASSOS:
+	1 - Implementar EA (thread/process)
+	2 - Implementar modulo partilhado 
+	3 - Juntar tudo
