@@ -18,7 +18,7 @@
 #include <stdint.h>
 #include  "settings.h"
 
-#include "thread.h"
+//#include "thread.h"
 //#include "process.h"
 
 typedef struct
@@ -32,16 +32,9 @@ typedef struct
    uint32_t out;  ///< point of retrieval (queue head)
    uint32_t cnt;  ///< number of items stored
 
-   //
-   //ACRESCENTEI
-   //
-
-   pthread_mutex_t access;
+   pthread_mutex_t accessFifo;
    pthread_cond_t not_empty;
    pthread_cond_t not_full;
-   //
-   //  
-    
 } PriorityFIFO;
 
 void init_pfifo(PriorityFIFO* pfifo);
